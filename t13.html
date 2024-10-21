@@ -1,0 +1,72 @@
+<svg version="1.1"
+     viewBox="0 0 350 18"
+     width="100%" height="100%"
+     xmlns="http://www.w3.org/2000/svg">
+  <style>
+    <!-- 19 -->
+    @keyframes words {
+        0% {content: ">> ";}
+        12% {content: ">> R";}
+        14% {content: ">> RE";}
+        18% {content: ">> RET";}
+        20% {content: ">> RETR";}
+        22% {content: ">> RETRY";}
+        24% {content: ">> RETRY.";}
+        42% {content: ">> RETRY. ";}
+        44% {content: ">> RETRY. R";}
+        46% {content: ">> RETRY. RE";}
+        48% {content: ">> RETRY. REM";}
+        50% {content: ">> RETRY. REMO";}
+        52% {content: ">> RETRY. REMOV";}
+        54% {content: ">> RETRY. REMOVA";}
+        56% {content: ">> RETRY. REMOVAL";}
+        58% {content: ">> RETRY. REMOVAL.";}
+        84% {content: ">> RETRY. REMOVAL. ";}
+        86% {content: ">> RETRY. REMOVAL. R";}
+        88% {content: ">> RETRY. REMOVAL. RE";}
+        90% {content: ">> RETRY. REMOVAL. REB";}
+        92% {content: ">> RETRY. REMOVAL. REBI";}
+        94% {content: ">> RETRY. REMOVAL. REBIR";}
+        96% {content: ">> RETRY. REMOVAL. REBIRT";}
+        98% {content: ">> RETRY. REMOVAL. REBIRTH";}
+        100% {content: ">> RETRY. REMOVAL. REBIRTH.";}
+    }
+        
+    @keyframes cursor {
+        to { visibility: hidden; }
+    }
+    @-webkit-keyframes cursor {
+        to { visibility: hidden; }
+    }
+        
+    .words::before {
+        animation: words 4s linear 0s 1 normal forwards;
+        content: "";
+    }
+    .letter-changer::before {
+        animation: changeLetter 7s linear 1s infinite normal forwards;
+        content: "";
+    }
+    .letter-changer::after {
+        content: "​";
+        position: relative;
+        display: inline-block;
+        padding-right: 2px;
+        border-right: 2px solid currentColor;
+        white-space: nowrap;
+        animation: cursor 0.5s steps(5, start) infinite;
+    }
+    span {
+        <!-- background-color: #1e1e1e; -->
+        background-color: transparent;
+        color: #689654;
+        font-size: 13px;
+        font-family: Courier New, monospace;
+    }
+</style>
+ 
+  <foreignObject xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+<span xmlns="http://www.w3.org/1999/xhtml" class="words"></span><span xmlns="http://www.w3.org/1999/xhtml" class="letter-changer"></span>
+  </foreignObject>
+  
+</svg>
