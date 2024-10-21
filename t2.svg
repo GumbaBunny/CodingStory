@@ -1,0 +1,72 @@
+<svg version="1.1"
+     viewBox="0 0 350 18"
+     width="100%" height="100%"
+     xmlns="http://www.w3.org/2000/svg">
+  <style>
+    <!-- 19 -->
+    @keyframes words {
+        0% {content: ">> ";}
+        12% {content: ">> Y";}
+        14% {content: ">> YO";}
+        16% {content: ">> YOU";}
+        20% {content: ">> YOU ";}
+        24% {content: ">> YOU A";}
+        28% {content: ">> YOU AR";}
+        32% {content: ">> YOU ARE";}
+        36% {content: ">> YOU ARE ";}
+        40% {content: ">> YOU ARE O";}
+        44% {content: ">> YOU ARE ON";}
+        48% {content: ">> YOU ARE ONE";}
+        52% {content: ">> YOU ARE ONE ";}
+        56% {content: ">> YOU ARE ONE S";}
+        60% {content: ">> YOU ARE ONE ST";}
+        64% {content: ">> YOU ARE ONE STE";}
+        68% {content: ">> YOU ARE ONE STEP";}
+        72% {content: ">> YOU ARE ONE STEP ";}
+        76% {content: ">> YOU ARE ONE STEP C";}
+        80% {content: ">> YOU ARE ONE STEP CL";}
+        84% {content: ">> YOU ARE ONE STEP CLO";}
+        88% {content: ">> YOU ARE ONE STEP CLOS";}
+        92% {content: ">> YOU ARE ONE STEP CLOSE";}
+        96% {content: ">> YOU ARE ONE STEP CLOSER";}
+        100% {content: ">> YOU ARE ONE STEP CLOSER.";}
+    }
+        
+    @keyframes cursor {
+        to { visibility: hidden; }
+    }
+    @-webkit-keyframes cursor {
+        to { visibility: hidden; }
+    }
+        
+    .words::before {
+        animation: words 2.5s linear 0s 1 normal forwards;
+        content: "";
+    }
+    .letter-changer::before {
+        animation: changeLetter 7s linear 1s infinite normal forwards;
+        content: "";
+    }
+    .letter-changer::after {
+        content: "​";
+        position: relative;
+        display: inline-block;
+        padding-right: 2px;
+        border-right: 2px solid currentColor;
+        white-space: nowrap;
+        animation: cursor 0.5s steps(5, start) infinite;
+    }
+    span {
+        <!-- background-color: #1e1e1e; -->
+        background-color: transparent;
+        color: #689654;
+        font-size: 13px;
+        font-family: Courier New, monospace;
+    }
+</style>
+ 
+  <foreignObject xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+<span xmlns="http://www.w3.org/1999/xhtml" class="words"></span><span xmlns="http://www.w3.org/1999/xhtml" class="letter-changer"></span>
+  </foreignObject>
+  
+</svg>

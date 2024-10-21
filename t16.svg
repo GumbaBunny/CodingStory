@@ -1,0 +1,74 @@
+<svg version="1.1"
+     viewBox="0 0 350 18"
+     width="100%" height="100%"
+     xmlns="http://www.w3.org/2000/svg">
+  <style>
+    <!-- 19 -->
+    @keyframes words {
+        0% {content: ">> ";}
+        10% {content: ">> T";}
+        12% {content: ">> TH";}
+        14% {content: ">> THE";}
+        16% {content: ">> THE ";}
+        18% {content: ">> THE A";}
+        20% {content: ">> THE ANS";}
+        24% {content: ">> THE ANSW";}
+        28% {content: ">> THE ANSWE";}
+        32% {content: ">> THE ANSWER";}
+        36% {content: ">> THE ANSWERS";}
+        40% {content: ">> THE ANSWERS ";}
+        44% {content: ">> THE ANSWERS C";}
+        48% {content: ">> THE ANSWERS CO";}
+        52% {content: ">> THE ANSWERS COM";}
+        56% {content: ">> THE ANSWERS COME";}
+        60% {content: ">> THE ANSWERS COME ";}
+        64% {content: ">> THE ANSWERS COME A";}
+        68% {content: ">> THE ANSWERS COME AT";}
+        72% {content: ">> THE ANSWERS COME AT ";}
+        76% {content: ">> THE ANSWERS COME AT A";}
+        80% {content: ">> THE ANSWERS COME AT A ";}
+        84% {content: ">> THE ANSWERS COME AT A C";}
+        88% {content: ">> THE ANSWERS COME AT A CO";}
+        92% {content: ">> THE ANSWERS COME AT A COS";}
+        96% {content: ">> THE ANSWERS COME AT A COST";}
+        100% {content: ">> THE ANSWERS COME AT A COST.";}
+    }
+        
+    @keyframes cursor {
+        to { visibility: hidden; }
+    }
+    @-webkit-keyframes cursor {
+        to { visibility: hidden; }
+    }
+        
+    .words::before {
+        animation: words 3s linear 0s 1 normal forwards;
+        content: "";
+    }
+    .letter-changer::before {
+        animation: changeLetter 7s linear 1s infinite normal forwards;
+        content: "";
+    }
+    .letter-changer::after {
+        content: "​";
+        position: relative;
+        display: inline-block;
+        padding-right: 2px;
+        border-right: 2px solid currentColor;
+        white-space: nowrap;
+        animation: cursor 0.5s steps(5, start) infinite;
+    }
+    span {
+        <!-- background-color: #1e1e1e; -->
+        background-color: transparent;
+        color: #689654;
+        font-size: 13px;
+        font-family: Courier New, monospace;
+    }
+</style>
+ 
+  <foreignObject xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+<span xmlns="http://www.w3.org/1999/xhtml" class="words"></span><span xmlns="http://www.w3.org/1999/xhtml" class="letter-changer"></span>
+  </foreignObject>
+  
+</svg>

@@ -1,0 +1,83 @@
+<svg version="1.1"
+     viewBox="0 0 350 18"
+     width="100%" height="100%"
+     xmlns="http://www.w3.org/2000/svg">
+  <style>
+    <!-- 19 -->
+    @keyframes words {
+        0% {content: ">> ";}
+        30% {content: ">> I";}
+        32% {content: ">> IN";}
+        34% {content: ">> IN ";}
+        36% {content: ">> IN I";}
+        38% {content: ">> IN IT";}
+        40% {content: ">> IN ITS";}
+        42% {content: ">> IN ITS ";}
+        44% {content: ">> IN ITS C";}
+        46% {content: ">> IN ITS CO";}
+        48% {content: ">> IN ITS COR";}
+        50% {content: ">> IN ITS CORP";}
+        52% {content: ">> IN ITS CORPS";}
+        54% {content: ">> IN ITS CORPSE";}
+        56% {content: ">> IN ITS CORPSE ";}
+        58% {content: ">> IN ITS CORPSE W";}
+        60% {content: ">> IN ITS CORPSE WI";}
+        62% {content: ">> IN ITS CORPSE WIL";}
+        64% {content: ">> IN ITS CORPSE WILL";}
+        66% {content: ">> IN ITS CORPSE WILL ";}
+        68% {content: ">> IN ITS CORPSE WILL R";}
+        70% {content: ">> IN ITS CORPSE WILL RI";}
+        72% {content: ">> IN ITS CORPSE WILL RIS";}
+        74% {content: ">> IN ITS CORPSE WILL RISE";}
+        76% {content: ">> IN ITS CORPSE WILL RISE ";}
+        78% {content: ">> IN ITS CORPSE WILL RISE A";}
+        80% {content: ">> IN ITS CORPSE WILL RISE A ";}
+        82% {content: ">> IN ITS CORPSE WILL RISE A N";}
+        84% {content: ">> IN ITS CORPSE WILL RISE A NE";}
+        86% {content: ">> IN ITS CORPSE WILL RISE A NEW";}
+        88% {content: ">> IN ITS CORPSE WILL RISE A NEW ";}
+        90% {content: ">> IN ITS CORPSE WILL RISE A NEW C";}
+        92% {content: ">> IN ITS CORPSE WILL RISE A NEW CI";}
+        94% {content: ">> IN ITS CORPSE WILL RISE A NEW CIT";}
+        97% {content: ">> IN ITS CORPSE WILL RISE A NEW CITY";}
+        100% {content: ">> IN ITS CORPSE WILL RISE A NEW CITY.";}
+    }
+        
+    @keyframes cursor {
+        to { visibility: hidden; }
+    }
+    @-webkit-keyframes cursor {
+        to { visibility: hidden; }
+    }
+        
+    .words::before {
+        animation: words 2.5s linear 0s 1 normal forwards;
+        content: "";
+    }
+    .letter-changer::before {
+        animation: changeLetter 7s linear 1s infinite normal forwards;
+        content: "";
+    }
+    .letter-changer::after {
+        content: "​";
+        position: relative;
+        display: inline-block;
+        padding-right: 2px;
+        border-right: 2px solid currentColor;
+        white-space: nowrap;
+        animation: cursor 0.5s steps(5, start) infinite;
+    }
+    span {
+        <!-- background-color: #1e1e1e; -->
+        background-color: transparent;
+        color: #689654;
+        font-size: 13px;
+        font-family: Courier New, monospace;
+    }
+</style>
+ 
+  <foreignObject xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+<span xmlns="http://www.w3.org/1999/xhtml" class="words"></span><span xmlns="http://www.w3.org/1999/xhtml" class="letter-changer"></span>
+  </foreignObject>
+  
+</svg>

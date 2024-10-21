@@ -1,0 +1,73 @@
+<svg version="1.1"
+     viewBox="0 0 350 18"
+     width="100%" height="100%"
+     xmlns="http://www.w3.org/2000/svg">
+  <style>
+    <!-- 19 -->
+    @keyframes words {
+        0% {content: ">> ";}
+        12% {content: ">> H";}
+        14% {content: ">> HO";}
+        16% {content: ">> HOW";}
+        18% {content: ">> HOW ";}
+        20% {content: ">> HOW A";}
+        22% {content: ">> HOW A ";}
+        24% {content: ">> HOW A V";}
+        26% {content: ">> HOW A VI";}
+        28% {content: ">> HOW A VIR";}
+        30% {content: ">> HOW A VIRU";}
+        32% {content: ">> HOW A VIRUS";}
+        35% {content: ">> HOW A VIRUS ";}
+        40% {content: ">> HOW A VIRUS E";}
+        45% {content: ">> HOW A VIRUS EN";}
+        50% {content: ">> HOW A VIRUS ENT";}
+        55% {content: ">> HOW A VIRUS ENTE";}
+        60% {content: ">> HOW A VIRUS ENTER";}
+        65% {content: ">> HOW A VIRUS ENTERS";}
+        70% {content: ">> HOW A VIRUS ENTERS A";}
+        75% {content: ">> HOW A VIRUS ENTERS A ";}
+        80% {content: ">> HOW A VIRUS ENTERS A B";}
+        85% {content: ">> HOW A VIRUS ENTERS A BO";}
+        90% {content: ">> HOW A VIRUS ENTERS A BOD";}
+        95% {content: ">> HOW A VIRUS ENTERS A BODY";}
+        100% {content: ">> HOW A VIRUS ENTERS A BODY.";}
+    }
+        
+    @keyframes cursor {
+        to { visibility: hidden; }
+    }
+    @-webkit-keyframes cursor {
+        to { visibility: hidden; }
+    }
+        
+    .words::before {
+        animation: words 3s linear 0s 1 normal forwards;
+        content: "";
+    }
+    .letter-changer::before {
+        animation: changeLetter 7s linear 1s infinite normal forwards;
+        content: "";
+    }
+    .letter-changer::after {
+        content: "​";
+        position: relative;
+        display: inline-block;
+        padding-right: 2px;
+        border-right: 2px solid currentColor;
+        white-space: nowrap;
+        animation: cursor 0.5s steps(5, start) infinite;
+    }
+    span {
+        <!-- background-color: #1e1e1e; -->
+        background-color: transparent;
+        color: #689654;
+        font-size: 13px;
+        font-family: Courier New, monospace;
+    }
+</style>
+ 
+  <foreignObject xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+<span xmlns="http://www.w3.org/1999/xhtml" class="words"></span><span xmlns="http://www.w3.org/1999/xhtml" class="letter-changer"></span>
+  </foreignObject>
+  
+</svg>
