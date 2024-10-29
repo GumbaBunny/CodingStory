@@ -23,12 +23,7 @@
         100% {content: ">> A TRUE RENEWAL.";}
     }
         
-    @keyframes cursor {
-        to { visibility: hidden; }
-    }
-    @-webkit-keyframes cursor {
-        to { visibility: hidden; }
-    }
+
         
     .words::before {
         animation: words 2.5s linear 0s 1 normal forwards;
@@ -38,19 +33,11 @@
         animation: changeLetter 7s linear 1s infinite normal forwards;
         content: "";
     }
-    .letter-changer::after {
-        content: "​";
-        position: relative;
-        display: inline-block;
-        padding-right: 2px;
-        border-right: 2px solid currentColor;
-        white-space: nowrap;
-        animation: cursor 0.5s steps(5, start) infinite;
-    }
+
     span {
         <!-- background-color: #1e1e1e; -->
         background-color: transparent;
-        color: #689654;
+        color: #65c162;
         font-size: 13px;
         font-family: Courier New, monospace;
     }
